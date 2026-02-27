@@ -6,7 +6,7 @@ export function ResetPassword() {
   const [password, setPassword] = useState("");
 
   const submit = async () => {
-    await fetch("https://poject-fullstack.onrender.com/api/auth/reset-password", {
+    await fetch("https://backend-j5ya.onrender.com/api/auth/reset-password", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ token, password }),
