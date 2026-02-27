@@ -1,8 +1,8 @@
 import express from "express";
-import { createOrder } from "../controllers/orderController.js";
+import { sendOrderConfirmation } from "../controllers/orderController.js";
 
 const router = express.Router();
 
-router.post("/create", createOrder);
+router.post("/send-confirmation", sendOrderConfirmation);
 
 export default router;
